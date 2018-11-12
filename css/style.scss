@@ -1,0 +1,80 @@
+---
+---
+@import "./bootstrap/bootstrap";
+@import "./artificier";
+@import "./homepage";
+@import "./aboutpage";
+@import "./Quickstart";
+@import "./feature";
+
+
+//for footer logo
+.transform-y-130 {
+	transform: translateY(-130%);
+}
+//footer box shadow
+.bsf-t{
+	box-shadow: 0 -1px 0 rgba(34, 56, 112, 0.22);
+	-moz-box-shadow: 0 -1px 0 rgba(34, 56, 112, 0.22);
+    -webkit-box-shadow: 0 -1px 0 rgba(34, 56, 112, 0.22);
+}
+
+//footer 
+.bs-t{
+    box-shadow: 0 -1px 0 rgba(34, 56, 112, 0.09);
+    -moz-box-shadow: 0 -1px 0 rgba(34, 56, 112, 0.09);
+    -webkit-box-shadow: 0 -1px 0 rgba(34, 56, 112, 0.09);
+}
+
+.footer {
+	p{
+		color: #666666;
+	    opacity: 0.65;
+	    font-size:14px;   
+	}
+	a{
+		color:#666666;
+		font-size:14px;
+	}
+	a:hover{
+	color:#333333;
+	text-decoration:none;
+	font-weight:bold;	
+	}
+}
+
+ol li {
+	color: #666666;
+    font-size: 14px;
+}
+
+.footer-c {
+	color: #666666;
+    opacity: 0.65;
+    font-size: 14px
+}
+
+.bs-t li {
+display: inline;
+color:#fffefe;
+//background: #057bf9;
+    border-radius: 17px;
+    padding: 4px;
+}
+.bs-t li i {	
+padding :4px;
+}
+
+.bg-fb {
+ background:#4545bb;
+}
+.bg-tw {
+background:#6fbbfb;
+}
+.bg-li {
+background:#469ce4;
+}
+.ptb-8 {
+    padding: 8px 0 8px;
+}
+
