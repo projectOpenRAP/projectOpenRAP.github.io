@@ -6,7 +6,7 @@
 	left: 55%;
 	bottom: 10%;
 	transform: translateX(-50%);
-	max-width: 40%;
+	max-width: 35%;
 }
 .banner-content {
 	top: 50%;
@@ -23,7 +23,7 @@
 	}
 	p{
 		//font-size: 6px;
-		font-size: 8px;
+		font-size: 12px;
 		@media screen and (min-width:786px){
 		font-size: 18px;
 		}
@@ -69,7 +69,7 @@
 	}
 	p{
 		//font-size: 6px;
-		font-size: 8px;
+		font-size: 12px;
 		padding-left: 23%;
 		@media screen and (min-width:992px){
 			//font-size: 16px;
@@ -85,9 +85,9 @@
 //for paragraphs
 .custom-contents {
 	p{
-		font-size: 9px;
+		font-size: 12px;
 		@media screen and (min-width:992px){
-		font-size: 18px;
+		font-size: 17px;
 		}
 	}
 	h2{
@@ -130,7 +130,7 @@
 	h4 a{
 	color: #05274c;
 	} 
-	h4 a:hover{
+	h4:hover{
 	color: #007bff;
     font-weight: 700;
     text-decoration:none;
@@ -301,6 +301,18 @@ ol li {
     font-size:35px;
     }
 }
+
+.banner3-button {
+	//padding-top:18%;
+	@media screen and(min-width:768px){
+	padding-top:18%;
+	}
+	@media screen and (min-width: 1200px){
+	padding-top:7%;
+	}
+}
+
+
 
 
 
