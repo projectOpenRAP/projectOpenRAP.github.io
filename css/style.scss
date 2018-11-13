@@ -6,6 +6,7 @@
 @import "./aboutpage";
 @import "./Quickstart";
 @import "./feature";
+@import "./documentation";
 
 
 //for footer logo
@@ -59,7 +60,7 @@ display: inline;
 color:#fffefe;
 //background: #057bf9;
     border-radius: 17px;
-    padding: 4px;
+    padding: 6px;
 }
 .bs-t li i {	
 padding :4px;
@@ -77,4 +78,11 @@ background:#469ce4;
 .ptb-8 {
     padding: 8px 0 8px;
 }
+footer ol li {
+	margin-bottom:10px;
+}
+footer ol {
+	padding-left:6%;
+}
+
 

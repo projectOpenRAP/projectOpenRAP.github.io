@@ -111,7 +111,11 @@ a:hover {
     line-height: 45px;
     text-align: center;
     position: absolute;
-    left: 86%;		
+    left: 40%;
+    
+    @media screen and (min-width:768px){
+		left: 86%;
+	}       
 }
 
 .border-custom {
@@ -120,3 +124,29 @@ a:hover {
 .border-custom :active {
     border-right: 2px solid #00a0e3 !important;
 }
+
+.num2 {
+
+	display: inline-block;
+    color: #fffefe;
+    border-radius: 50%;
+    background-color: #00a0e3;
+    font-size: 20px;
+    font-weight: 700;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+
+    @media screen and (min-width:768px){
+		left: 86%;
+	} 
+}
+
+.scrol-b {
+    height: 450px;
+    overflow-y: scroll;
+}
+
