@@ -7,6 +7,7 @@
 @import "./Quickstart";
 @import "./feature";
 @import "./documentation";
+@import "./documentation-details";
 
 
 //for footer logo
@@ -84,5 +85,25 @@ footer ol li {
 footer ol {
 	padding-left:6%;
 }
+.nav-link.active {
+    color: #007bff;
+    font-weight: 700;
+}
+//for active navbar class
+.navbar-light .navbar-nav .nav-link.active {
+	color: #007bff;
+}
+//to remove the ouline
+.ouline-0 {
+	outline: none;
+}
+.color-white {
+	color:#fffff;
+}
+
+
+
+
+
 
 
