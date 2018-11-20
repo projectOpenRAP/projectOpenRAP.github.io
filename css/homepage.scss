@@ -6,7 +6,7 @@
 	left: 55%;
 	bottom: 10%;
 	transform: translateX(-50%);
-	max-width: 35%;
+	max-width: 29%;
 }
 .banner-content {
 	top: 50%;
@@ -311,6 +311,15 @@ ol li {
 	padding-top:7%;
 	}
 }
+.pt-14 {    
+    @media screen and(min-width:768px){
+	padding-top:18%;
+	}
+	@media screen and (min-width: 1200px){
+	padding-top: 14%;
+	}
+}
+
 
 
 
