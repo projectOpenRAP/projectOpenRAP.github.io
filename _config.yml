@@ -1,14 +1,18 @@
 # Site settings
 title: OpenRAP
-name: Sunbird
 email: info@sunbird.org
 description: "OpenRAP "
 environment: production
-permalink: pretty
+permalink: /:categories/:title/
 markdown: kramdown
 highlighter: pygments
 safe: false
-ga: 
+defaults:
+  -
+    scope:
+      path: "posts"
+    values:
+      layout: "docs-detail" 
 showSearch: true
 exclude:
 - vendor
