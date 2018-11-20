@@ -1,0 +1,55 @@
+
+.bg-search-button {    
+    border-radius:25px;
+    color:#ffff;
+}
+.bg-bluegrey {
+    background-color: #338ec9;
+}
+a {
+   // color: #ffffff;
+}
+text-white {
+	color: #ffffff;
+}
+
+//for sidebar
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;  
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #2196F3;
+  color: white;
+}
+//sidebar ends
+
+.accordion {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}    
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #000;
+    float: right;
+    margin-left: 5px;
+}
