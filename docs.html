@@ -1,0 +1,84 @@
+---
+title: Documentation
+desc: openRap Docs.
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% include head.html %}
+	<meta name="robots" content="index,follow">
+</head>
+
+<body>
+	  {% include header.html %}
+    <div>
+
+	<!--Banner-->
+			
+			<div class="position-relative text-center">			
+				<img src="/img/Layer_as.png" class="img-fluid" alt="OpenRAP QuickStart">
+				<div class="position-absolute text-center Banner1">
+					<h2>openRAP Documentation</h1>
+					<p>Getting started is Find any help and support that you might need within our documentation. easy. We’ve got you covered.</p>
+				</div>
+				<div class="QBanner">
+					<a class="position-absolute search-btn">
+						<div class="play-btn bs-btn"><i class='fa fa-search pr-10'></i><input type="text" name="" class="ouline-0 border-0 w-75"></div>
+					</a>
+				</div>
+					
+				
+			</div>						
+	<!--/Banner-->		
+	
+	
+	<!--Banner2-->		
+			<div class="container">			
+				<div class="pt-40 pb-40">			
+					<div class="row pt-7">
+							{% assign categories = site.categories | sort %}
+							{% for category in categories %}
+								
+									<div class="col-md-6">
+										<div class="row">
+											<div class="p-20">
+												<div class="p-20 text-left border border-info br-10 bs-c">
+														<div class="d-web-box pb-15">
+															<i class="fa fa-folder-open-o fa-folder"></i>
+															<h4>
+																<a class="pl-10">{{ category[0] }}</a>
+															</h4>
+														</div>
+														<p>Lorem ipsum dolor sit amet, epicuri scriptorem eu qui. Ex has meis blandit percipitur.</p>
+														<a class="btn-sm btn border-skyBlue txt-upper btn-custom" href="#">LEARN MORE</a>
+												</div>
+											</div>	
+										</div>
+										{% for posts in category[1] %}
+											
+										
+										
+										<a href="{{posts.url}}">
+											<div class="row m-10 border br-5">																
+												<div class="p-15 d-web-box text-right">									
+													<i class="fa fa-cog fa-custom mr-10"></i><span class="glyphicon glyphicon-chevron-right"></span><p class="m-0">{{posts.title}}</p>
+												</div>								
+											</div>
+										</a>
+										{% endfor %}
+										
+									</div>
+						   {% endfor %}		
+					</div>					
+				</div>			
+			</div>
+			
+	<!--/Banner2-->				
+				
+	</div>
+
+	{% include footer.html %}
+
+  </body>
+</html>
