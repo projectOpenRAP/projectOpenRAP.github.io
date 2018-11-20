@@ -1,0 +1,59 @@
+---
+title: Documentation
+layout: docs-detail
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% include head.html %}
+	<meta name="robots" content="index,follow">
+</head>
+
+<body>
+	  {% include header.html %}
+	  <div class="bg-blue">
+	<div class="container bg-blue">
+		<div class="row ">
+			<div class="col-3">
+				<div class="p-10">
+					<a href="/docs/" class="text-white"> << Back to Overview</a>
+				</div>	
+			</div>
+			<div class="col-9">
+				<div class="text-right pb-10">
+					<span class="bg-bluegrey p-10 br-25">
+					
+					<i class="fa fa-search bg-search-button m-10" aria-hidden="true"></i><input type="text" name="" class="ouline-0 border-0 bg-bluegrey m-10 w-25" placeholder="search">
+					
+					</span>
+				</div>	
+			</div>
+		</div>
+	</div>  
+	</div>  
+    <div class="container">
+		<div class="row pt-30 pb-30">
+			<div class="col-3">			
+				<div class="sidebar">
+				  <a href="#"><span class="accordion">Menu 1</span></a>
+					  <ul class="submenu">
+						  <li><a href="#">submenu 1</a></li>
+						  <li><a href="#">submenu 2</a></li>
+					  </ul>
+				  <a href="#"> Menu 2</a>
+				  <a href="#"> Menu 3</a>
+				  <a href="#"> Menu 4</a>
+				</div>
+			</div>
+			<div class="col-9">
+				<h1>{{page.title}}</h1>
+				<p>{{page.date}}</p>
+				<p>{{page.url}}</p>
+				{{content}}
+			</div>
+		</div>		
+	</div>
+	{% include footer.html %}
+  </body>
+</html>
