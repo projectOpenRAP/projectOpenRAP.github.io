@@ -1,36 +1,95 @@
-# Site settings
 title: OpenRAP
 email: info@sunbird.org
 description: "OpenRAP "
 environment: production
-permalink: /:categories/:title/
+permalink: /:categories/:SubCategories/:title/
 markdown: kramdown
 highlighter: pygments
 safe: false
 defaults:
-  -
-    scope:
-      path: "posts"
-    values:
-      layout: "docs-detail" 
+-
+  scope:
+    path: "docs"
+  values:
+    layout: "docs-detail"
+    showSidebar: "false"
+    allowSearch: "false"
+    categoryOrder: 99
+-
+  scope:
+    path: "docs/developer"
+  values:
+    categories: 
+      - 'You are Developer'
+    categoriesDesc: 'You are develper ka desc'
+    CategoryOrder: 1
+-
+  scope:
+    path: "docs/facilitator"
+  values:
+    categories: 
+      - 'You are Facilitator'
+    categoriesDesc: 'You are facilitator ka desc'
+    CategoryOrder: 2
+-
+  scope:
+    path: "docs/developer/subcategory-1"
+  values:
+    SubCategories:
+       - 'Sub Category 1'
+    SubCategoryOrder: 1
+-
+  scope:
+    path: "docs/developer/subcategory-2"
+  values:
+    SubCategories:
+        - 'Sub Category 2'
+    SubCategoryOrder: 2
+
+-
+  scope:
+    path: "docs/facilitator/subcategory-3"
+  values:
+    SubCategories:
+      - 'Sub Category 3'
+    SubCategoryOrder: 1
+-
+  scope:
+    path: "docs/facilitator/subcategory-4"
+  values:
+    SubCategories:
+      - 'Sub Category 4'
+    SubCategoryOrder: 2
+
+-
+  scope:
+    path: "docs/facilitator/subcategory-5"
+  values:
+    SubCategories:
+        - 'Sub Category 5'
+    SubCategoryOrder: 3
+
+-
+  scope:
+    path: "docs/facilitator/subcategory-6"
+  values:
+    SubCategories:
+        - 'Sub Category 6'
+    SubCategoryOrder: 3
+-
+  scope:
+    path: "docs/facilitator/subcategory-7"
+  values:
+    SubCategories:
+        - 'Sub Category 7'
+    SubCategoryOrder: 3
+
 showSearch: true
 exclude:
 - vendor
 - .gitignore
 - README.md
 - ingredients
-- js/components
-- js/stores
-- js/actions
-- js/support
-- node_modules
-- package.json
-- package-lock.json
-- node.txt
-- Gemfile
-- Gemfile.lock
-- circle.yml
-- s3_website.yml
 - staging
 - docs/*/ingredients
 - docs/*/*.sh
