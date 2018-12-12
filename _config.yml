@@ -21,7 +21,7 @@ defaults:
   values:
     categories: 
       - 'You are Developer'
-    categoriesDesc: 'You are develper ka desc'
+    categoriesDesc: 'You develpers description'
     CategoryOrder: 1
 -
   scope:
@@ -29,7 +29,7 @@ defaults:
   values:
     categories: 
       - 'You are Facilitator'
-    categoriesDesc: 'You are facilitator ka desc'
+    categoriesDesc: 'You facilitators description'
     CategoryOrder: 2
 -
   scope:
