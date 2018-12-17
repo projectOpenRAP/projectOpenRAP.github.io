@@ -9,47 +9,42 @@ layout: docs-detail
 	{% include head.html %}
 	<meta name="robots" content="index,follow">
 </head>
-
 <body>
 	  {% include header.html %}
 	  <div class="bg-blue">
-	<div class="container bg-blue">
-		<div class="row ">
-			<div class="col-3">
-				<div class="p-10">
-					<a href="/docs/" class="text-white"> << Back to Overview</a>
-				</div>	
+		<div class="container bg-blue">
+			<div class="row ">
+				<div class="col-md-3 col-12">
+					<div class="p-20">
+						<a href="/docs/" class="text-white font-bold"> << Back to Overview</a>
+					</div>	
+				</div>
+				<div class="col-md-9 col-12">
+					<div class="p-10">
+						<form action="/search/" method="get" class="text-right">
+							<span class="bg-bluegrey p-10 br-25 searchBar">
+								<i class="fa fa-search bg-search-button op-05" aria-hidden="true"></i>
+								<input type="search" name="q" id="searchBoxInput" class="ouline-0 border-0 bg-bluegrey m-10 w-25" placeholder="Search" autocomplete="off">
+							</span>
+						</form>
+
+					</div>	
+				</div>
 			</div>
-			<div class="col-9">
-				<div class="text-right pb-10">
-					<span class="bg-bluegrey p-10 br-25">
-					
-					<i class="fa fa-search bg-search-button m-10" aria-hidden="true"></i><input type="text" name="" class="ouline-0 border-0 bg-bluegrey m-10 w-25" placeholder="search">
-					
-					</span>
-				</div>	
-			</div>
-		</div>
-	</div>  
+		</div>  
 	</div>  
     <div class="container">
 		<div class="row pt-30 pb-30">
-			<div class="col-3">			
-				<div class="sidebar">
-				  <a href="#"><span class="accordion">Menu 1</span></a>
-					  <ul class="submenu">
-						  <li><a href="#">submenu 1</a></li>
-						  <li><a href="#">submenu 2</a></li>
-					  </ul>
-				  <a href="#"> Menu 2</a>
-				  <a href="#"> Menu 3</a>
-				  <a href="#"> Menu 4</a>
-				</div>
+			<div class="col-md-4 col-xs-12 br-r-1 pr-0">			
+				<!-- <h4>{{page.subcategories}}</h4> -->
+				<!-- sidebar start -->
+					{% include sidebar.html %}							
+				<!-- sidebar start end -->				
 			</div>
-			<div class="col-9">
-				<h1>{{page.title}}</h1>
-				<p>{{page.date}}</p>
-				<p>{{page.url}}</p>
+			<div class="col-xs-12 col-md-8 pl-30">
+				<!-- <h1>{{page.title}}</h1> -->
+				<h3 class="font-600 color-blue">{{page.categories}}</h3>
+				<p>{{page.subcategories}}</p>
 				{{content}}
 			</div>
 		</div>		
