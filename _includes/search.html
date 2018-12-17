@@ -1,11 +1,8 @@
-<div class="search-cover">
-	<form method="get" action="https://www.google.com/search" target="_blank">
-		<input type="text" value="" name="q" placeholder="Search"/ class="search-input" title="Enter keyword to search">
-		<input type="hidden" value="en" name="hl" />
-		<input type="hidden" name="sitesearch" value="http://www.sunbird.org" />
-		<input type="hidden" value="lang_en" name="lr" />
-		<button type="submit" onclick="submit()" class="search-btn" title="Search">
-			<i class="fa fa-search"></i>
-		</button>
-	</form>
-</div>
+  <!--Searchbar-->
+  <div>
+     <form action="/search/" method="get" class="search-flex bs-btn d-flex">
+        <i class='fa fa-search pr-10 pl-10'></i>
+        <input type="search" class="searchBox__input ouline-0" name="q" id="searchBoxInput" placeholder="Search" autocomplete="off" >
+     </form>
+  </div>
+  <!--/Searchbar-->
