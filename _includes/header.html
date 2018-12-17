@@ -3,7 +3,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
 		<div class="container">
 			<a class="navbar-brand" href="/index.html">
-				<img src="/img/Logo.png" alt="LOGO">
+				<img src="/img/Logo.png" alt="OpenRAP Logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -20,7 +20,8 @@
 						<a class="nav-link {% if page.url == '/quick-start/' %}active{% endif %}" href="/quick-start/">Quick Start</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link {% if page.url == '/docs/' %}active{% endif %}" href="/docs/">Documentation</a>
+						<!-- <a class="nav-link {% if page.url == '/docs/' %}active{% endif %}" href="/docs/">Documentation</a> -->
+						<a class="nav-link {% if page.url contains '/docs/' %}active{% endif %}" href="/docs/">Documentation</a>
 					</li>
 				</ul>
 			</div>
