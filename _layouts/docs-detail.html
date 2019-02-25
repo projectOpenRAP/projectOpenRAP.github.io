@@ -1,0 +1,61 @@
+---
+title: Documentation
+layout: docs-detail
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% include head.html %}
+	{% if page.allowSearch == "true" %}
+		<meta name="robots" content="index, follow">
+	{% else %}
+		<meta name="robots" content="noindex,nofollow">
+	{% endif %}
+<!--
+	<meta name="robots" content="index,follow">
+-->
+</head>
+<body>
+	  {% include header.html %}
+	  <div class="bg-blue">
+		<div class="container bg-blue">
+			<div class="row ">
+				<div class="col-md-4 col-12">
+					<div class="p-20">
+						<a href="/docs/" class="text-white font-bold"> << Back to Overview</a>
+					</div>	
+				</div>
+				<div class="col-md-8 col-12">
+					<div class="p-10">
+						<form action="/search/" method="get" class="text-right">
+							<span class="bg-bluegrey p-10 br-25 searchBar">
+								<i class="fa fa-search bg-search-button op-05" aria-hidden="true"></i>
+								<input type="search" name="q" id="searchBoxInput" class="ouline-0 border-0 bg-bluegrey m-10 w-25" placeholder="Search" autocomplete="off">
+							</span>
+						</form>
+
+					</div>	
+				</div>
+			</div>
+		</div>  
+	</div>  
+    <div class="container">
+		<div class="row pt-30 pb-30">
+			<div class="col-md-4 col-xs-12 br-r-1 pr-0">			
+				<!-- <h4>{{page.subcategories}}</h4> -->
+				<!-- sidebar start -->
+					{% include sidebar.html %}							
+				<!-- sidebar start end -->				
+			</div>
+			<div class="col-xs-12 col-md-8 pl-30">
+				<!-- <h1>{{page.title}}</h1> -->
+				<h3 class="font-600 color-blue">{{page.categories}}</h3>
+				<p>{{page.subcategories}}</p>
+				{{content}}
+			</div>
+		</div>		
+	</div>
+	{% include footer.html %}
+  </body>
+</html>
