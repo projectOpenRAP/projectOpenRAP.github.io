@@ -1,0 +1,40 @@
+{% assign docspages = site.pages | where: 'layout','docs-detail'  %}
+{% assign sidebarCategories = docspages  | sort: 'CategoryOrder' |  group_by: "categories" %}
+{% assign pageCategory = page.url  %}
+<nav>
+	<ul class="nav d-block sidebar-menu">
+		{% for sidebarCategory in sidebarCategories %}
+		<li class="panel-title">
+			{% assign categoryname = sidebarCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', '' %}
+			<a href="#" id="btn-{{ forloop.index }}" data-toggle="collapse" data-target="#submenu{{ forloop.index }}" 
+			{% if page.categories[0] == categoryname %}
+				aria-expanded="true" class="p-10 accordion bg-skyBlue"
+			{% else %}
+				class="p-10 accordion bg-skyBlue collapsed" aria-expanded="false" 
+			{% endif %}
+			>	
+				{{ categoryname }}
+			</a>
+			{% assign sidebarSubCategories = sidebarCategory.items  | sort: 'SubCategoryOrder' | group_by: "SubCategories" %}
+			<ul  id="submenu{{ forloop.index }}" role="menu" aria-labelledby="btn-{{ forloop.index }}"
+			{% if page.categories[0] == categoryname %}
+				class="nav collapse pl-30 level-1 mb-15 show"
+			{% else %}
+				class="nav collapse pl-30 level-1 mb-15"
+			{% endif %}
+			>
+				{% for sidebarSubCategory in sidebarSubCategories %}
+				<li>
+					<a>{{sidebarSubCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', ''  }}</a>
+					{% assign sidebarSubCategoriesPages = sidebarSubCategory.items  | where: 'showSidebar','true' |  sort: "PageOrdering" %}
+					<ul class="list-style-none level-2">
+						{% for sidebarSubCategoriesPage in sidebarSubCategoriesPages %}
+						<li><a href="{{sidebarSubCategoriesPage.url}}">{{sidebarSubCategoriesPage.title}}</a></li>
+						{% endfor %}
+					</ul>
+				{% endfor %}
+			</ul>
+		</li>
+		{% endfor %}
+	</ul>
+</nav>
