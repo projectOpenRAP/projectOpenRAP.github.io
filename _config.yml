@@ -3,8 +3,6 @@ email: info@sunbird.org
 description: "OpenRAP "
 environment: production
 permalink: /:categories/:SubCategories/:title/
-markdown: kramdown
-highlighter: pygments
 safe: false
 defaults:
 -
