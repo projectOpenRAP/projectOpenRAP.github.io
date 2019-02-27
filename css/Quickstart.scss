@@ -267,3 +267,60 @@ a:hover {
             line-height: 45px;
     }
 }
+/* timeline */
+
+.timeline{
+
+	.timeline-badge{
+		position: relative;
+		width: 45px;
+		height: 45px;
+		background-color: #ddd;
+		border-radius: 50%;
+		z-index: 1;
+		color: #868686;
+		padding: 2px;
+		font-size: 25px;
+		left: -20px;
+		transition: width 0.5s, height;
+	}
+
+	.content {
+		padding: 20px 30px;
+		background-color: white;
+		position: relative;
+		border-radius: 6px;
+	}
+
+	.know-more{
+		color:#868686;
+	}
+
+	ul.nav-pills {
+		top: 20px;
+	}
+
+	.nav-link, .timeline-section{
+		min-height: 400px;
+	}
+
+	.nav-link{
+		width: 3px;
+		padding:0;
+		background-color: #ddd;
+		top: 25px;
+		display: inline-block;
+	}
+	.nav-pills .show > .nav-link{
+		background-color: transparent;
+	}
+	.nav-pills .nav-link.active .timeline-badge{
+		background-color: #00a0e3;
+		color: #fff; 
+	}
+	.nav-pills .nav-link.active, 
+	.nav-pills .show > .nav-link.active{
+		background-color: #00a0e3!important;
+	}
+}
+
