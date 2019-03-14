@@ -1,8 +1,15 @@
 .banner-1 {
-	background: url(/img/Layer_10.png);
+	background:linear-gradient(to right, rgba(0,168,234,0.7) 0%,rgba(0,114,188,0.7) 100%), url(/img/home-banner.png);
 	background-repeat: no-repeat;
 	background-position: top right;
 	background-size: 50% 100%;
+	.btn{
+		width: 159px;
+		height: 46px;
+		border-radius: 23px;
+		color:#fff;
+		background-color: #00abed;
+	}
 }
 
 .banner-inner {
@@ -13,7 +20,7 @@
 	left: 55%;
 	bottom: 15%;
 	transform: translateX(-50%);
-	max-width: 35%;
+	max-width: 46%;
 	@media screen and (max-width: 500px) {
 		left: 75%;
 		bottom: 25%;
@@ -23,7 +30,7 @@
 .banner-content {
 	top: 50%;
 	z-index: 2;
-	max-width: 48%;
+	max-width: 38%;
 	h1 {
 		font-size: 16px;
 		@media screen and (min-width: 786px) {
@@ -43,7 +50,7 @@
 }
 
 .bg-skyBlue {
-	background: #f1f7fe;
+	background: #f0f4f6;
 }
 
 .border-skyBlue {
@@ -126,7 +133,8 @@
 }
 
 .banner3-content {
-	h4 {
+	h4 {	
+		color: #05274c;
 		font-size: 14px;
 		@media screen and (min-width: 992px) {
 			font-size: 22px;
@@ -159,6 +167,13 @@
 		@media screen and (min-width: 992px) {
 			font-size: 32px;
 		}
+	}
+	h4 {	
+		font-size: 16px;
+		@media screen and (min-width: 992px) {
+			font-size: 20px;
+		}
+	
 	}
 }
 
@@ -304,9 +319,9 @@ ol li {
 }
  
  .cp-20 {
-
 		 @media screen and(min-width: 768px) {
-		 margin: 20px;
+			 margin: 20px 0 0 0;
+			 min-height:76px;
 		}
  }
  .ctp-20 {
