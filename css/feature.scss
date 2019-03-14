@@ -58,7 +58,6 @@
 }
 
 
-
 .curve-bottom-l::before {
     content: " ";
     display: block;
@@ -76,6 +75,9 @@
     .curve-bottom::before {
            /* height: 256px;*/
         }
+	.monitoring-img{
+		order: 13!important;
+	}
 }
 
  .calign {         
