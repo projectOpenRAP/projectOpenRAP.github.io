@@ -13,6 +13,7 @@
     
     @media screen and(min-width:768px){
         padding: 0.5rem 0.5rem;
+	width:257px;
     }
 
     @media screen and (min-width: 500px){        
@@ -74,15 +75,11 @@ transform: translateY(20%)
 }
 
 .step {
-	/*width: 50px;
-    height: 18px;*/
     opacity: 0.56;
     color: #333333;
-    font-family: Seravek;
     font-size: 20px;
     font-weight: 300;
     line-height: 31px;
-    letter-spacing: -0.2px;
 }
 .sbtitle {
 	/* Style for "Get the de" */
@@ -263,15 +260,15 @@ a:hover {
 
 	.timeline-badge{
 		position: relative;
-		width: 45px;
-		height: 45px;
-		background-color: #ddd;
+		width: 30px;
+		height: 30px;
+		background-color: #ededed;
 		border-radius: 50%;
 		z-index: 1;
-		color: #868686;
+		color: #c9c9c9;
 		padding: 2px;
-		font-size: 25px;
-		left: -20px;
+		font-size: 18px;
+		left: -13px;
 		transition: width 0.5s, height;
 	}
 
@@ -280,12 +277,25 @@ a:hover {
 		background-color: white;
 		position: relative;
 		border-radius: 6px;
+		h4{
+			font-size:1.375rem;
+		}
+		p{	
+		   color:#05274c;
+		   line-height:31px;
+		}
 	}
 
 	.know-more{
-		color:#868686;
+		color:#999999;
+		text-transform:uppercase;
+		font-size: 12px;
+                letter-spacing: 1.45px;
+		font-weight:bold;
 	}
-
+	.know-more:hover{
+		      color:#0082ca;
+		}
 	ul.nav-pills {
 		top: 20px;
 	}
@@ -297,7 +307,7 @@ a:hover {
 	.nav-link{
 		width: 3px;
 		padding:0;
-		background-color: #ddd;
+		background-color: #eeeeee;
 		top: 25px;
 		display: inline-block;
 	}
@@ -305,12 +315,12 @@ a:hover {
 		background-color: transparent;
 	}
 	.nav-pills .nav-link.active .timeline-badge{
-		background-color: #00a0e3;
+		background-color: #2b98f6;
 		color: #fff; 
 	}
 	.nav-pills .nav-link.active, 
 	.nav-pills .show > .nav-link.active{
-		background-color: #00a0e3!important;
+		background-color: #2b98f6!important;
 	}
 }
 
