@@ -11,7 +11,27 @@
 		background-color: #00abed;
 	}
 }
-
+.desktop-banner{
+	display:none;
+	@media screen and(min-width: 768px) {
+		display:block;
+	}
+}
+.mobile-banner{
+	background:linear-gradient(to right, rgba(0,168,234,0.7) 0%,rgba(0,114,188,0.7) 100%), url(/img/home-banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:30px 0px;
+	.btn-custom{
+		border:1px solid #fff;
+	}
+	h1{
+		font-size:16px;
+	}
+	@media screen and (min-width: 768px) {
+		display:none;
+	}
+}
 .banner-inner {
 	padding-top: 40%;
 }
@@ -170,6 +190,8 @@
 	}
 	h4 {	
 		font-size: 16px;
+		color:#05274c;
+		text-align:center;
 		@media screen and (min-width: 992px) {
 			font-size: 20px;
 		}

@@ -15,6 +15,9 @@
 .transform-y-130 {
 	transform: translateY(-130%);
 }
+body{
+color:#333;
+}
 //footer box shadow
 .bsf-t{
 	box-shadow: 0 -1px 0 rgba(34, 56, 112, 0.22);
@@ -31,7 +34,7 @@
 
 .footer {
 	p{
-		color: #666666;
+	    color: #666666;
 	    opacity: 0.65;
 	    font-size:14px;   
 	}
@@ -44,11 +47,15 @@
 	text-decoration:none;
 	font-weight:bold;	
 	}
+	h4 a{
+	    color:#333;
+	    font-weight:bold;
+       }
 }
 
 ol li {
 	color: #666666;
-    font-size: 14px;
+       font-size: 14px;
 }
 
 .footer-c {
@@ -87,7 +94,11 @@ footer ol li {
 	margin-bottom:10px;
 }
 footer ol {
-	padding-left:6%;
+	padding-left:0px;
+	@media screen and (min-width:768px){
+       		padding-left:30px;
+        }
+	
 }
 .nav-link.active {
     color: #007bff;
