@@ -94,7 +94,11 @@ footer ol li {
 	margin-bottom:10px;
 }
 footer ol {
-	padding-left:30px;
+	padding-left:0px;
+	@media screen and (min-width:768px){
+       		padding-left:30px;
+        }
+	
 }
 .nav-link.active {
     color: #007bff;
