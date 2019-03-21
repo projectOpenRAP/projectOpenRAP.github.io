@@ -1,6 +1,6 @@
 
 
-
+#Introduction
 This page must contain the following information:
 * Why OpenRap
 * Who is a facilitator in context of OpenRAP
