@@ -4,8 +4,9 @@
 <nav>
 	<ul class="nav d-block sidebar-menu">
 		{% for sidebarCategory in sidebarCategories %}
+		{% assign categoryname = sidebarCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', '' %}
+		{% if categoryname !="" %}
 		<li class="panel-title">
-			{% assign categoryname = sidebarCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', '' %}
 			<a href="#" id="btn-{{ forloop.index }}" data-toggle="collapse" data-target="#submenu{{ forloop.index }}" 
 			{% if page.categories[0] == categoryname %}
 				aria-expanded="true" class="p-10 accordion bg-skyBlue"
@@ -35,6 +36,7 @@
 				{% endfor %}
 			</ul>
 		</li>
+		{% endif %}
 		{% endfor %}
 	</ul>
 </nav>
