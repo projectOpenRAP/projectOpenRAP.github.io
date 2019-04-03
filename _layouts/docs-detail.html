@@ -1,6 +1,6 @@
 ---
 title: Documentation
-layout: docs-detail
+layout: compress
 ---
 <!DOCTYPE html>
 <html>
@@ -18,28 +18,7 @@ layout: docs-detail
 </head>
 <body>
 	  {% include header.html %}
-	  <div class="bg-blue">
-		<div class="container bg-blue">
-			<div class="row ">
-				<div class="col-md-4 col-12">
-					<div class="p-20">
-						<a href="/docs/" class="text-white font-bold"> << Back to Overview</a>
-					</div>	
-				</div>
-				<div class="col-md-8 col-12">
-					<div class="p-10">
-						<form action="/search/" method="get" class="text-right">
-							<span class="bg-bluegrey p-10 br-25 searchBar">
-								<i class="fa fa-search bg-search-button op-05" aria-hidden="true"></i>
-								<input type="search" name="q" id="searchBoxInput" class="ouline-0 border-0 bg-bluegrey m-10 w-25" placeholder="Search" autocomplete="off">
-							</span>
-						</form>
-
-					</div>	
-				</div>
-			</div>
-		</div>  
-	</div>  
+		{% include searchbar.html %}
     <div class="container">
 		<div class="row pt-30 pb-30">
 			<div class="col-md-4 col-xs-12 br-r-1 pr-0">			
