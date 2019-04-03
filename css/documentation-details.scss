@@ -47,11 +47,7 @@ text-white {
     text-decoration: none;
 }    
 .accordion:after {
-   /* content: '\02795';
-    font-size: 13px;
-    color: #000;
-    float: right;
-    margin-left: 5px;*/
+
 
 }
 .collapse show li {
@@ -64,10 +60,10 @@ text-white {
   opacity: 0.5;
   }
 .br-r-1 {
-      border-right: 1px solid #d4dce3;
+  border-right: 1px solid #d4dce3;
 }
 .list-style-none {
-      list-style: none;
+  list-style: none;
 }
 .font-color-blue {
   color: #007bff;
@@ -120,11 +116,15 @@ a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
     font-size:22px;
   }
   input{
-  opacity:0.5;
+  color:#fff;
+  //opacity:0.5;
   &::placeholder,
   &:focus {
     color:#fff;
   }
+  }
+  .fa-search {
+    opacity: 0.5;
   }
 }
 
