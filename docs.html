@@ -31,9 +31,6 @@ desc: openRap Docs.
                <div class="row pt-7">
                   {% assign docspages = site.pages | where: 'layout','docs-detail'  %}
                   {% assign sidebarCategories = docspages | sort: 'CategoryOrder' |  group_by: "categories" %}
-                  <pre>
-                  {{sidebarCategories}}
-                  </pre>
                   {% for sidebarCategory in sidebarCategories %}
                   {% assign sidebarCategoriesPages = sidebarCategory.items | first  %}
                   {% assign sidebarCategoryName = sidebarCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', ''  %}
