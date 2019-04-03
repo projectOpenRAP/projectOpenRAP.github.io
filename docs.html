@@ -50,7 +50,7 @@ desc: openRap Docs.
                            </div>
                         </div>
                      </div>
-                     {% endif %}
+                     
                      {% assign sidebarSubCategories = sidebarCategory.items  | sort: 'SubCategoryOrder' | group_by: "SubCategories" %}
                      {% for sidebarSubCategory in sidebarSubCategories %}
                      {% assign sidebarSubCategoriesPages = sidebarSubCategory.items  | where: 'PageOrdering','1' %}
@@ -66,6 +66,7 @@ desc: openRap Docs.
                      {% endfor %}
                      {% endfor %}
                   </div>
+                  {% endif %}
                   {% endfor %}
                   <span class="vl d-none d-md-block"></span>
                </div>
