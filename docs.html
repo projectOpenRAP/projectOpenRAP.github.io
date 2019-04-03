@@ -34,6 +34,7 @@ desc: openRap Docs.
                   {% for sidebarCategory in sidebarCategories %}
                   {% assign sidebarCategoriesPages = sidebarCategory.items | first  %}
                   {% if sidebarCategory.name %}
+                  {{sidebarCategory.name}}
                   <div class="col-md-6 px-10">
                      <div class="row">
                         <div class="p-20 col">
