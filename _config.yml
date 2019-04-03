@@ -1,9 +1,30 @@
 title: OpenRAP
-email: info@sunbird.org
+email: info@openrap.io
 description: "OpenRAP "
 environment: production
 permalink: /:categories/:SubCategories/:title/
 safe: false
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  blanklines: true
+  profile: false
+showSearch: true
+exclude:
+- vendor
+- .gitignore
+- README.md
+- ingredients
+- staging
+- docs/*/ingredients
+- docs/*/*.sh
+- docs/*/version.yaml
+- .sh
+sass:
+    sass_dir: css
+    style: compressed
+
 defaults:
 -
   scope:
@@ -43,7 +64,6 @@ defaults:
     SubCategories:
         - 'Sub Category 2'
     SubCategoryOrder: 2
-
 -
   scope:
     path: "docs/facilitator/subcategory-3"
@@ -58,7 +78,6 @@ defaults:
     SubCategories:
       - 'Sub Category 4'
     SubCategoryOrder: 2
-
 -
   scope:
     path: "docs/facilitator/subcategory-5"
@@ -66,7 +85,6 @@ defaults:
     SubCategories:
         - 'Sub Category 5'
     SubCategoryOrder: 3
-
 -
   scope:
     path: "docs/facilitator/subcategory-6"
@@ -81,19 +99,3 @@ defaults:
     SubCategories:
         - 'Sub Category 7'
     SubCategoryOrder: 3
-
-showSearch: true
-exclude:
-- vendor
-- .gitignore
-- README.md
-- ingredients
-- staging
-- docs/*/ingredients
-- docs/*/*.sh
-- docs/*/version.yaml
-- .sh
-
-sass:
-    sass_dir: css
- 
