@@ -10,7 +10,7 @@ allowIndexing: true
 ---
 
 ## Overview
-Add introductory information
+<Provide introductory information>
 
 ## Prerequisites
 Provide prerequisites for the topic detailed on the page, if any>
