@@ -22,7 +22,7 @@ Provide prerequisites for the topic detailed on the page, if any>
     <th style="width:65%;">Screen</th>
   </tr>
    <tr>
-     <td> text for the step explained in the associated screen. Add as may rows in the table as required.> 
+     <td> text for the step explained in the associated screen. Add as many rows in the table as required.> 
        </td>
       <td><img src="<path>/name of screen.png"></td>
   </tr>
