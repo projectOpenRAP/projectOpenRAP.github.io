@@ -10,10 +10,10 @@ allowIndexing: true
 ---
 
 ## Overview
-<Add introductory information>
+Add introductory information
 
 ## Prerequisites
-<Provide prerequisites for the topic detailed on the page, if any>
+Provide prerequisites for the topic detailed on the page, if any>
 
 ## < Main Sub topic of the page> 
  <table>
