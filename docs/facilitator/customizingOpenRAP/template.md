@@ -1,3 +1,14 @@
+---
+date: 2019-04-20
+title: <Page Title>
+description: <Page description> 
+PageOrdering: 2
+showSidebar: true
+published: true
+allowSearch: false
+allowIndexing: true
+---
+
 ## Overview
 
 <Add introductory information>
@@ -5,7 +16,7 @@
 ## Prerequisites
 <Provide prerequisites for the topic detailed on the page, if any>
 
-## <Main Sub topic of the page> 
+## < Main Sub topic of the page> 
  <table>
   <tr>
     <th style="width:35%;">Step</th>
