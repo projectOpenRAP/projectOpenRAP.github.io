@@ -1,14 +1,19 @@
 title: "openRAP"
-description: "An open source software initiative to develop a modular and scalable localised Content Distribution Network (CDN) platform."
+description: "openRAP is an open source software initiative to develop a modular & scalable localised CDN platform."
+keywords: "openRAP, offline CDN, Open source software"
 email: "info@openrap.io"
 mobile: "+91 93123111111"
 environment: production
 permalink: /:categories/:SubCategories/:title/
+facebook: "https://www.facebook.com/"
+twitter: "https://twitter.com/"
+linkedin: "https://www.linkedin.com/"
+github: "https://github.com/"
 safe: false
 showSearch: true
 sass:
-    sass_dir: assets/scss
-    style: compressed
+  sass_dir: assets/scss
+  style: compressed
 compress_html:
   clippings: all
   comments: all
@@ -23,6 +28,9 @@ exclude:
 - package.json
 - package-lock.json
 - gulpfile.js
+- tslint
+- .stylelintrc
+- node_modules
 defaults:
 -
   scope:
