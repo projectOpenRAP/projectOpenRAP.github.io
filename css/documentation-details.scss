@@ -5,7 +5,7 @@
 .bg-bluegrey {
     background-color: #338ec9;
 }
-text-white {
+.text-white {
 	color: #ffffff;
 }
 
@@ -91,6 +91,7 @@ a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
 .sidebar-menu .level-2 li{
   position: relative;
   padding:0;
+  margin-bottom: 12px;
 }
 .sidebar-menu .level-2 li:before{
   content: ' ';
