@@ -1,14 +1,17 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-<head>
-	{% include head.html %}
-</head>
-<body>
-	{% include header.html %}
-	{{ content }}
-	{% include footer.html %}
-</body>
+  <head>
+    {% include head.html %} {% if page.allowSearch == "true" %}
+    <meta name="robots" content="index, follow" />
+    {% else %}
+    <meta name="robots" content="noindex,nofollow" />
+    {% endif %}
+  </head>
+  <body>
+    {% include header.html %} {{ content }} {% include footer.html %}
+  </body>
 </html>

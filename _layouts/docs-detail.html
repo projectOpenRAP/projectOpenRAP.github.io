@@ -2,39 +2,30 @@
 title: Documentation
 layout: compress
 ---
+
 <!DOCTYPE html>
 <html>
-
-<head>
-	{% include head.html %}
-	{% if page.allowSearch == "true" %}
-		<meta name="robots" content="index, follow">
-	{% else %}
-		<meta name="robots" content="noindex,nofollow">
-	{% endif %}
-<!--
-	<meta name="robots" content="index,follow">
--->
-</head>
-<body>
-	  {% include header.html %}
-		{% include searchbar.html %}
+  <head>
+    {% include head.html %} {% if page.allowSearch == "true" %}
+    <meta name="robots" content="index, follow" />
+    {% else %}
+    <meta name="robots" content="noindex,nofollow" />
+    {% endif %}
+  </head>
+  <body>
+    {% include header.html %} {% include searchbar.html %}
     <div class="container">
-		<div class="row pt-30 pb-30">
-			<div class="col-md-4 col-xs-12 br-r-1 pr-0">			
-				<!-- <h4>{{page.subcategories}}</h4> -->
-				<!-- sidebar start -->
-					{% include sidebar.html %}							
-				<!-- sidebar start end -->				
-			</div>
-			<div class="col-xs-12 col-md-8 pl-30">
-				<!-- <h1>{{page.title}}</h1> -->
-				<h3 class="font-600 color-blue">{{page.categories}}</h3>
-				<p>{{page.subcategories}}</p>
-				{{content}}
-			</div>
-		</div>		
-	</div>
-	{% include footer.html %}
+      <div class="row pt-30 pb-30">
+        <div class="col-md-4 col-xs-12 br-r-1 pr-0">
+          {% include sidebar.html %}
+        </div>
+        <div class="col-xs-12 col-md-8 pl-30">
+          <h3 class="font-600 color-blue">{{page.categories}}</h3>
+          <p>{{page.subcategories}}</p>
+          {{content}}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
   </body>
 </html>

@@ -7,32 +7,31 @@
 		{% assign categoryname = sidebarCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', '' %}
 		{% if categoryname !="" %}
 		<li class="panel-title">
-			<a href="#" id="btn-{{ forloop.index }}" data-toggle="collapse" data-target="#submenu{{ forloop.index }}" 
 			{% if page.categories[0] == categoryname %}
-				aria-expanded="true" class="p-10 accordion bg-skyBlue"
+			<a href="#" id="btn-{{ forloop.index }}" data-toggle="collapse" data-target="#submenu{{ forloop.index }}" aria-expanded="true" class="p-10 accordion bg-skyBlue">{{ categoryname }}</a>
 			{% else %}
-				class="p-10 accordion bg-skyBlue collapsed" aria-expanded="false" 
+			<a href="#" id="btn-{{ forloop.index }}" data-toggle="collapse" data-target="#submenu{{ forloop.index }}" aria-expanded="false"  class="p-10 accordion bg-skyBlue collapsed">{{ categoryname }}</a>
 			{% endif %}
-			>	
-				{{ categoryname }}
-			</a>
+			
 			{% assign sidebarSubCategories = sidebarCategory.items  | sort: 'SubCategoryOrder' | group_by: "SubCategories" %}
-			<ul  id="submenu{{ forloop.index }}" role="menu" aria-labelledby="btn-{{ forloop.index }}"
+			
 			{% if page.categories[0] == categoryname %}
-				class="nav collapse pl-30 level-1 mb-15 show"
+			<ul  id="submenu{{ forloop.index }}" role="menu" aria-labelledby="btn-{{ forloop.index }}" class="nav collapse pl-30 level-1 mb-15 show">
 			{% else %}
-				class="nav collapse pl-30 level-1 mb-15"
+			<ul  id="submenu{{ forloop.index }}" role="menu" aria-labelledby="btn-{{ forloop.index }}" class="nav collapse pl-30 level-1 mb-15">
 			{% endif %}
-			>
 				{% for sidebarSubCategory in sidebarSubCategories %}
 				<li>
-					<a>{{sidebarSubCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', ''  }}</a>
 					{% assign sidebarSubCategoriesPages = sidebarSubCategory.items  | where: 'showSidebar','true' |  sort: "PageOrdering" %}
+					<a href="#">{{sidebarSubCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', ''  }}</a>
 					<ul class="list-style-none level-2">
 						{% for sidebarSubCategoriesPage in sidebarSubCategoriesPages %}
-						<li><a href="{{sidebarSubCategoriesPage.url}}">{{sidebarSubCategoriesPage.title}}</a></li>
+						<li>
+							<a href="{{sidebarSubCategoriesPage.url}}">{{sidebarSubCategoriesPage.title}}</a>
+						</li>
 						{% endfor %}
 					</ul>
+				</li>
 				{% endfor %}
 			</ul>
 		</li>
@@ -40,3 +39,4 @@
 		{% endfor %}
 	</ul>
 </nav>
+
