@@ -82,14 +82,9 @@ transform: translateY(20%)
     line-height: 31px;
 }
 .sbtitle {
-	/* Style for "Get the de" */
-	/*width: 170px;
-	height: 17px;*/
 	color: #333333;
 	font-family: Seravek;
 	font-size: 22px;
-	//font-weight: 500;
-	/* Text style for "Get the de" */
 	letter-spacing: -0.4px;
 }
 a:hover {
@@ -102,16 +97,6 @@ a:hover {
     font-family: Seravek;
 }
 .num {
-	//width: 8px;
-	//height: 13px;
-	//color: #ffffff;
-	//font-family: Muli;
-	//font-size: 18px;
-	//font-weight: 700;
-	//padding:15px;
-	//background-color:#00a0e3;
-	//border-radius:20px;
-	
 	display: inline-block;
     color: #fffefe;
     border-radius: 50%;
@@ -158,23 +143,6 @@ a:hover {
 	} 
 }
 
-.scrol-b {
-    //height: 450px;
-    //overflow-y: scroll;
-}
-
-.fix {
-  /* position:fixed; */
-  /* top :20%; */
-}
-.list-group-item {
-	//padding: 6.75rem 1.25rem;
-}
-.list-group-item.active {
-	//color:black;
-	//background-color:none;
-	
-}
 .QuickBanner{
     color: #ffffff;
     left: 50%;
@@ -182,9 +150,6 @@ a:hover {
     transform: translateX(-50%);
 }
 
-/*
- *  STYLE 3
- */
 
 #style-3::-webkit-scrollbar-track
 {
@@ -205,15 +170,10 @@ a:hover {
 
 .scrollbar
 {
-    /* margin-left: 30px; */
     float: left;
-    /* height: 300px; */
     height : 625px;
-    /* width: 65px; */
     width : 100%;
-    /* background: #F5F5F5; */
     overflow-y: scroll;
-    /* margin-bottom: 25px; */
 
     @media screen and (min-width:768px){
         height : 700px;
@@ -254,7 +214,6 @@ a:hover {
             line-height: 45px;
     }
 }
-/* timeline */
 
 .timeline{
 

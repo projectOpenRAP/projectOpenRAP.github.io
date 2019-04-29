@@ -1,7 +1,7 @@
 ---
 date: 2019-04-20
-title: <Page Title>
-description: <Page description> 
+title: Page Title
+description: Page description
 PageOrdering: 2
 showSidebar: true
 published: true

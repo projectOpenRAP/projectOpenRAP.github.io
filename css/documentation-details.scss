@@ -1,4 +1,3 @@
-
 .bg-search-button {    
     border-radius:25px;
     color:#ffff;
@@ -6,14 +5,10 @@
 .bg-bluegrey {
     background-color: #338ec9;
 }
-a {
-   // color: #ffffff;
-}
-text-white {
+.text-white {
 	color: #ffffff;
 }
 
-//for sidebar
 .sidebar {
   margin: 0;
   padding: 0;
@@ -46,10 +41,7 @@ text-white {
     padding: 10px;
     text-decoration: none;
 }    
-.accordion:after {
 
-
-}
 .collapse show li {
     padding : 10px;  
 }
@@ -99,6 +91,7 @@ a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
 .sidebar-menu .level-2 li{
   position: relative;
   padding:0;
+  margin-bottom: 12px;
 }
 .sidebar-menu .level-2 li:before{
   content: ' ';
@@ -117,7 +110,6 @@ a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
   }
   input{
   color:#fff;
-  //opacity:0.5;
   &::placeholder,
   &:focus {
     color:#fff;
@@ -139,8 +131,6 @@ a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
     content:"\f067";
 }
 
-
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 .panel-title > a:before {
     float: right !important;
     font-family: FontAwesome;
