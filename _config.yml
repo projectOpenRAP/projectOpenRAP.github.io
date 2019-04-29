@@ -31,6 +31,7 @@ exclude:
 - tslint
 - .stylelintrc
 - node_modules
+- htmlhint.conf
 defaults:
 -
   scope:
