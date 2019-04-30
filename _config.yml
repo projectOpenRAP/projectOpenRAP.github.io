@@ -11,9 +11,6 @@ linkedin: "https://www.linkedin.com/"
 github: "https://github.com/"
 safe: false
 showSearch: true
-sass:
-  sass_dir: assets/scss
-  style: compressed
 compress_html:
   clippings: all
   comments: all
