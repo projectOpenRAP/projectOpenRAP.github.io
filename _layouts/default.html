@@ -5,13 +5,23 @@ layout: compress
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
   <head>
-    {% include head.html %} {% if page.allowSearch == "true" %}
+    {% include head.html %} {% if page.allowSearch %}
     <meta name="robots" content="index, follow" />
     {% else %}
-    <meta name="robots" content="noindex,nofollow" />
+    <meta name="robots" content="noindex, nofollow" />
     {% endif %}
   </head>
-  <body>
+  <body
+    {%
+    if
+    page.scroll
+    %}
+    data-spy="scroll"
+    data-target="#myScrollspy"
+    {%
+    endif
+    %}
+  >
     {% include header.html %} {{ content }} {% include footer.html %}
   </body>
 </html>

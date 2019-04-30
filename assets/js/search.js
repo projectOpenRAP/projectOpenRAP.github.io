@@ -78,7 +78,7 @@ layout: null
 			searchResultsEl.style.display = "none";
 			searchProcessEl.innerText = "No";
 		}
-	}
+	} 
 
 	window.index = lunr(function () {
 		this.field("id");
