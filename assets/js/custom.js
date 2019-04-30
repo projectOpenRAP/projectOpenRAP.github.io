@@ -7,8 +7,7 @@ $(document).ready(function(){
 		margin:10,
 		nav:true,
 		dots: true,
-		navText: ["<img src='/assets/images/Rectangle_4.png'>","<img src='/assets/images/Rectangle_4 (1).png'>"],
-		navText: ["<img src='/assets/images/Layer_14.png'>","<img src='/assets/images/Layer_14 (1).png'>"],
+		navText: ["<img src='/assets/images/icons/left_arrow.png' alt='Left Arrow'>","<img src='/assets/images/icons/right_arrow.png' alt='Right Arrow'>"],
 		items:1		
 	});
 });

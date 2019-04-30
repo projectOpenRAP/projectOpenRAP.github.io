@@ -8,12 +8,14 @@
   // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
   // So reset our font and text properties to avoid inheriting weird values.
   @include reset-text();
+
   font-size: $popover-font-size;
   // Allow breaking very long words so they don't overflow the popover's bounds
   word-wrap: break-word;
   background-color: $popover-bg;
   background-clip: padding-box;
   border: $popover-border-width solid $popover-border-color;
+
   @include border-radius($popover-border-radius);
   @include box-shadow($popover-box-shadow);
 
@@ -149,12 +151,15 @@
   &[x-placement^="top"] {
     @extend .bs-popover-top;
   }
+
   &[x-placement^="right"] {
     @extend .bs-popover-right;
   }
+
   &[x-placement^="bottom"] {
     @extend .bs-popover-bottom;
   }
+
   &[x-placement^="left"] {
     @extend .bs-popover-left;
   }
@@ -170,6 +175,7 @@
   background-color: $popover-header-bg;
   border-bottom: $popover-border-width solid darken($popover-header-bg, 5%);
   $offset-border-width: calc(#{$border-radius-lg} - #{$popover-border-width});
+
   @include border-top-radius($offset-border-width);
 
   &:empty {

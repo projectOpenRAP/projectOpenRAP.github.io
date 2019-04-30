@@ -111,6 +111,7 @@
   line-height: 1;
   background-color: transparent; // remove default button style
   border: $border-width solid transparent; // remove default button style
+
   @include border-radius($navbar-toggler-border-radius);
 
   @include hover-focus {
@@ -237,8 +238,9 @@
 
   .navbar-text {
     color: $navbar-light-color;
+
     a {
-      color: $navbar-light-active-color;       
+      color: $navbar-light-active-color;
 
       @include hover-focus {
         color: $navbar-light-active-color;
@@ -289,6 +291,7 @@
 
   .navbar-text {
     color: $navbar-dark-color;
+
     a {
       color: $navbar-dark-active-color;
 

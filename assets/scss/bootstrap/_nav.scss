@@ -38,6 +38,7 @@
 
   .nav-link {
     border: $nav-tabs-border-width solid transparent;
+
     @include border-top-radius($nav-tabs-border-radius);
 
     @include hover-focus {
@@ -112,6 +113,7 @@
   > .tab-pane {
     display: none;
   }
+
   > .active {
     display: block;
   }
