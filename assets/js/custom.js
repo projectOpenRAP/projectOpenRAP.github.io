@@ -1,3 +1,6 @@
+if ('ontouchstart' in document.documentElement) {
+	document.addEventListener('touchstart', onTouchStart, {passive: true});
+}
 $(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
 		loop:true,

@@ -29,6 +29,7 @@ exclude:
 - .stylelintrc
 - node_modules
 - htmlhint.conf
+- assets/scss
 defaults:
 -
   scope:
