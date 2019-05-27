@@ -1,87 +1,78 @@
 ---
 title: Search
 description: Search OpenRAP
-language: en-Gb
-keywords:
 allowSearch: false
+layout: default
 ---
-<!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns/website#" lang="en">
-	<head>
-		{% include head.html %}
-		<meta name="robots" content="noindex,nofollow">
-	</head>
-	<body>
-		<!-- Header -->
-		{% include header.html %}
-		{% include searchbar.html %}
-		<!-- /Header -->
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="search-inner p-20 mt-20">
-						<p>
-							<span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span>
-						</p>
-						<ul id="search-results"></ul>
-					</div>
-				</div>
-			</div>
 
-		</div>
+{% include searchbar.html %}
 
-	<script>
-		window.data = {
-			{% for post in site.pages %}
-			    {% if post.allowSearch %}
-					{% if post.title %}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="search-inner p-20 mt-20">
+        <p>
+          <span id="search-process">Loading</span> results
+          <span id="search-query-container" style="display: none;"
+            >for "<strong id="search-query"></strong>"</span
+          >
+        </p>
+        <ul id="search-results"></ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-							{% if added %},{% endif %}
-							{% assign added = false %}
-							"{{ post.url | slugify }}": {
-								"id": "{{ post.url | slugify }}",
-								"title": "{{ post.title | xml_escape }}",
-								"keywords": "{{ post.keywords | join: ", "  | xml_escape }}",
-								"description": "{{ post.description | xml_escape }}",
-								"category": "{{ post.categories | join: ", " | xml_escape }}",
-								"userRole": "{{ post.SubCategories}}",
-								"url": " {{ post.url | xml_escape }}",
-								"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
-							}
-							{% assign added = true %}
+<script>
+  window.data = {
+  	{% for post in site.pages %}
+  	    {% if post.allowSearch %}
+  			{% if post.title %}
 
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		};
-	</script>
-	<script>
-		var getUrlParameter = function getUrlParameter(sParam) {
-			var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-				sURLVariables = sPageURL.split('&'),
-				sParameterName,
-				i;
+  					{% if added %},{% endif %}
+  					{% assign added = false %}
+  					"{{ post.url | slugify }}": {
+  						"id": "{{ post.url | slugify }}",
+  						"title": "{{ post.title | xml_escape }}",
+  						"keywords": "{{ post.keywords | join: ", "  | xml_escape }}",
+  						"description": "{{ post.description | xml_escape }}",
+  						"category": "{{ post.categories | join: ", " | xml_escape }}",
+  						"userRole": "{{ post.SubCategories}}",
+  						"url": " {{ post.url | xml_escape }}",
+  						"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
+  					}
+  					{% assign added = true %}
 
-			for (i = 0; i < sURLVariables.length; i++) {
-				sParameterName = sURLVariables[i].split('=');
+  			{% endif %}
+  		{% endif %}
+  	{% endfor %}
+  };
+</script>
+<script>
+  var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+      sURLVariables = sPageURL.split("&"),
+      sParameterName,
+      i;
 
-				if (sParameterName[0] === sParam) {
-					return sParameterName[1] === undefined ? true : sParameterName[1];
-				}
-			}
-		};
-		var searchQuery = getUrlParameter('q');
-		$("#searchBoxInput").val(searchQuery);
-	</script>
+    for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split("=");
 
-	<script type="text/javascript" src="/js/lunr.min.js?{{ site.time}}"></script>
-	<script type="text/javascript" src="/js/search.js?{{ site.time}}"></script>
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : sParameterName[1];
+      }
+    }
+  };
+  var searchQuery = getUrlParameter("q");
+  $("#searchBoxInput").val(searchQuery);
+</script>
 
-	<!-- Footer -->
-	<div class="footer-fix">&nbsp;</div>
-	{% include footer.html %}
-	<!-- /Footer -->
-
-    </body>
-</html>
+<script
+  type="text/javascript"
+  src="/assets/js/lunr.min.js"
+  async
+  defer
+></script>
+<script type="text/javascript" src="/assets/js/search.js" async defer></script>
+<!-- Footer -->
+<div class="footer-fix">&nbsp;</div>

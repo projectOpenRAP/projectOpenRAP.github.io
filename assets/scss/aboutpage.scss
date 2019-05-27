@@ -1,0 +1,51 @@
+.banner1 {
+  h2 {
+    font-size: 13px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    font-size: 11px;
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  color: #fff;
+  left: 50%;
+  bottom: 29%;
+  transform: translateX(-50%);
+
+  @media screen and (max-width: 400px) {
+    left: unset;
+    transform: unset;
+  }
+}
+
+p {
+  font-size: 12px;
+
+  @media screen and (min-width: 992px) {
+    font-size: 17px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+
+  @media screen and (min-width: 992px) {
+    font-size: 32px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .py-xs {
+    padding: 10px 10px;
+  }
+}

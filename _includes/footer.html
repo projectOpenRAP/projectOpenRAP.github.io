@@ -1,56 +1,101 @@
 <footer class="footer bg-skyBlue">
-	<div class="pt-40 background-default bsf-t">		
-		<div class="container">
-			<div class="position-absolute transform-y-130">
-				<a href="index.html">
-				<img src="/img/Logo_png.png" class="img-fluid w-53" alt="learning">
-				</a>
-			</div>
-			<div class="row pb-20">				
-				<div class="col-md-4 col-sm-12 border-right">
-					<p>OpenRAP is an open source software initiative to develop a modular & scalable localised CDN platform.</p>
-				</div>			
-				<div class="col-md-2 col-sm-6 ">
-					<ol class="unstyled">
-						<li><h4><a href="/about/">About OpenRAP</a></h4></li>
-						<li><a href="#">Case Studies</a></li>
-						<li><a href="#">Partners</a></li>
-					</ol>					
-				</div>			
-				<div class="col-md-2 col-sm-6 sideline m-0">
-					<ol class="unstyled">
-						<li><h4><a href="#">Resources</a></h4></li>
-						<li><a href="#">FAQs Privacy</a></li>						
-						<li><a href="#">Policy</a></li>
-						<li><a href="#">Terms of Use</a></li>
-					</ol>					
-				</div>
-				<div class="col-md-4 col-sm-12">
-					<ol class="unstyled">
-						<li><h4><a href="#">Contact Us</a></h4></li>
-						<li>Email - <a href="mailto:info@openrap.com">info@openrap.com</a></li>
-						<li>Mobile Number +91 93123111111</li>						
-					</ol>				
-				</div>			
-			</div>		
-		</div>
-	</div>
-		<div class="container-fluid bs-t">
-			<div class="container">
-			<div class="row pt-10">
-			<div class="col-12 col-sm-6 col-4 footer-c ptb-8 mb-10 align-self-center">
-				&copy; {{ site.time | | date: '%Y'}} OpenRAP All rights reserved.
-			</div>
-			<div class="col-12 col-sm-6 col-8 text-sm-right ptb-8">
-				<ol class="m-0 unstyled">
-					<a href="https://www.facebook.com/" target="_blank"><li class="bg-fb ml-10"><i class='fa fa-facebook'></i></li></a>
-					<a href="https://twitter.com/" target="_blank"><li class="bg-tw ml-10"><i class='fa fa-twitter'></i></li></a>
-					<a href="https://in.linkedin.com/" target="_blank"><li class="bg-li ml-10"><i class='fa fa-linkedin'></i></li></a>
-					<a href="https://github.com/" target="_blank"><li class="bg-inverse ml-10"><i class='fa fa-github-square'></i></li></a>						
-				</ol>
-			</div>
-		</div>
-	    </div>
-	    </div>		
+  <div class="pt-40 background-default bsf-t">
+    <div class="container">
+      <div class="position-absolute transform-y-130">
+        <a href="/index.html">
+          <img
+            src="/assets/images/logo/logo-footer.png"
+            class="img-fluid w-53"
+            alt="{{ site.title }}"
+          />
+        </a>
+      </div>
+      <div class="row pb-20">
+        <div class="col-md-4 col-sm-12 border-right">
+          <p>
+            {{ site.desc }}
+          </p>
+        </div>
+        <div class="col-md-2 col-sm-6 ">
+          <ol class="unstyled">
+            <li>
+              <h4><a href="/about/">About OpenRAP</a></h4>
+            </li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Partners</a></li>
+          </ol>
+        </div>
+        <div class="col-md-2 col-sm-6 sideline m-0">
+          <ol class="unstyled">
+            <li>
+              <h4><a href="#">Resources</a></h4>
+            </li>
+            <li><a href="#">FAQs Privacy</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ol>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <ol class="unstyled">
+            <li>
+              <h4><a href="#">Contact Us</a></h4>
+            </li>
+            <li>
+              Email : <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </li>
+            <li>Mobile Number : {{ site.mobile }}</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bs-t">
+    <div class="container">
+      <div class="row pt-10">
+        <div
+          class="col-12 col-sm-6 col-4 footer-c ptb-8 mb-10 align-self-center"
+        >
+          &copy; {{ site.time | | date: '%Y'}} openRAP All rights reserved.
+        </div>
+        <div class="col-12 col-sm-6 col-8 text-sm-right ptb-8">
+          <a
+            class="bg-fb ml-10 social-icon"
+            target="_blank"
+            rel="noopener"
+            href="{{ site.facebook }}"
+            aria-label="Visit Facebook Page"
+          >
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a
+            class="bg-tw ml-10 social-icon"
+            target="_blank"
+            rel="noopener"
+            href="{{ site.twitter }}"
+            aria-label="Visit Twitter Handle"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            class="bg-li ml-10 social-icon"
+            target="_blank"
+            rel="noopener"
+            href="{{ site.linkedin }}"
+            aria-label="Visit Linkedin Profile"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            class="bg-inverse ml-10 social-icon"
+            target="_blank"
+            rel="noopener"
+            href="{{ site.github }}"
+            aria-label="Visit Github Repo"
+          >
+            <i class="fa fa-github-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
- 

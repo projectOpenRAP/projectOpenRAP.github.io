@@ -1,78 +1,84 @@
 ---
 title: Documentation
 desc: openRap Docs.
+layout: default
+allowSearch: true
 ---
-<!DOCTYPE html>
-<html>
-   <head>
-      {% include head.html %}
-      <meta name="robots" content="index,follow">
-   </head>
-   <body>
-      {% include header.html %}
-      <div>
-         <!--Banner-->
-         <div class="position-relative text-center">
-            <img src="/img/Layer_as.png" class="img-fluid col-12 p-0" alt="OpenRAP QuickStart">
-            <div class="position-absolute text-center banner1">
-               <h2>
-               <b>openRAP</b> Documentation</h1>
-               <p>Getting started is Find any help and support that you might need within our documentation. easy. We’ve got you covered.</p>
+
+<div>
+  <!--Banner-->
+  <div class="position-relative text-center">
+    <img
+      src="/assets/images/bg/about-banner.png"
+      class="img-fluid col-12 p-0"
+      alt="OpenRAP QuickStart"
+    />
+    <div class="position-absolute text-center banner1">
+      <h1><b>openRAP</b> Documentation</h1>
+      <p>
+        Getting started is Find any help and support that you might need within
+        our documentation. easy. We’ve got you covered.
+      </p>
+    </div>
+    <div class="QBanner">
+      <a class="position-absolute search-btn">
+        {% include search.html %}
+      </a>
+    </div>
+  </div>
+  <!--/Banner-->
+  <div class="container">
+    <div class="pt-40 pb-40">
+      <div class="row pt-7">
+        {% assign docspages = site.pages | where: 'layout','docs-detail' %} {%
+        assign sidebarCategories = docspages | sort: 'CategoryOrder' | group_by:
+        "categories" %} {% for sidebarCategory in sidebarCategories %} {% assign
+        sidebarCategoriesPages = sidebarCategory.items | first %} {% assign
+        sidebarCategoryName = sidebarCategory.name | replace: "[", "" | replace:
+        "]", "" | replace: '"', '' %} {% if sidebarCategoryName !="" %}
+        <div class="col-md-6 px-10">
+          <div class="row">
+            <div class="p-20 col">
+              <div class="p-20 text-left border border-info br-10 bs-c">
+                <div class="d-web-box pb-15">
+                  <i class="fa fa-folder-open-o fa-folder"></i>
+                  <h4>
+                    <a class="pl-10">{{sidebarCategoryName}}</a>
+                  </h4>
+                </div>
+                <p>{{sidebarCategoriesPages.categoriesDesc}}</p>
+                <a
+                  class="btn-sm btn border-skyBlue txt-upper btn-custom"
+                  href=""
+                  >LEARN MORE</a
+                >
+              </div>
             </div>
-            <div class="QBanner">
-               <a class="position-absolute search-btn">
-                  {% include search.html %}
-               </a>
+          </div>
+
+          {% assign sidebarSubCategories = sidebarCategory.items | sort:
+          'SubCategoryOrder' | group_by: "SubCategories" %} {% for
+          sidebarSubCategory in sidebarSubCategories %} {% assign
+          sidebarSubCategoriesPages = sidebarSubCategory.items | where:
+          'PageOrdering','1' %} {% for sidebarSubCategoriesPage in
+          sidebarSubCategoriesPages %}
+          <a href="{{sidebarSubCategoriesPage.url}}">
+            <div class="row m-10 border br-5">
+              <div class="p-15 d-web-box text-right">
+                <i class="fa fa-cog fa-custom mr-10"></i
+                ><span class="glyphicon glyphicon-chevron-right"></span>
+                <p class="m-0">
+                  {{sidebarSubCategory.name | replace: "[", "" | replace: "]",
+                  "" | replace: '"', '' }}
+                </p>
+              </div>
             </div>
-         </div>
-         <!--/Banner-->			
-         <div class="container">
-            <div class="pt-40 pb-40">
-               <div class="row pt-7">
-                  {% assign docspages = site.pages | where: 'layout','docs-detail'  %}
-                  {% assign sidebarCategories = docspages | sort: 'CategoryOrder' |  group_by: "categories" %}
-                  {% for sidebarCategory in sidebarCategories %}
-                  {% assign sidebarCategoriesPages = sidebarCategory.items | first  %}
-                  {% assign sidebarCategoryName = sidebarCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', ''  %}
-                  {% if sidebarCategoryName !="" %}
-                  <div class="col-md-6 px-10">
-                     <div class="row">
-                        <div class="p-20 col">
-                           <div class="p-20 text-left border border-info br-10 bs-c">
-                              <div class="d-web-box pb-15">
-                                 <i class="fa fa-folder-open-o fa-folder"></i>
-                                 <h4>
-                                    <a class="pl-10">{{sidebarCategoryName}}</a>
-                                 </h4>
-                              </div>
-                              <p>{{sidebarCategoriesPages.categoriesDesc}}</p>
-                              <a class="btn-sm btn border-skyBlue txt-upper btn-custom" href="">LEARN MORE</a>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     {% assign sidebarSubCategories = sidebarCategory.items  | sort: 'SubCategoryOrder' | group_by: "SubCategories" %}
-                     {% for sidebarSubCategory in sidebarSubCategories %}
-                     {% assign sidebarSubCategoriesPages = sidebarSubCategory.items  | where: 'PageOrdering','1' %}
-                     {% for sidebarSubCategoriesPage in sidebarSubCategoriesPages %}
-                     <a href="{{sidebarSubCategoriesPage.url}}">
-                        <div class="row m-10 border br-5">
-                           <div class="p-15 d-web-box text-right">
-                              <i class="fa fa-cog fa-custom mr-10"></i><span class="glyphicon glyphicon-chevron-right"></span>
-                              <p class="m-0">{{sidebarSubCategory.name | replace: "[", "" | replace: "]", "" | replace: '"', ''  }}</p>
-                           </div>
-                        </div>
-                     </a>
-                     {% endfor %}
-                     {% endfor %}
-                  </div>
-                  {% endif %}
-                  {% endfor %}
-                  <span class="vl d-none d-md-block"></span>
-               </div>
-            </div>
-         </div>			
+          </a>
+          {% endfor %} {% endfor %}
+        </div>
+        {% endif %} {% endfor %}
+        <span class="vl d-none d-md-block"></span>
       </div>
-      {% include footer.html %}
-   </body>
-</html>
+    </div>
+  </div>
+</div>
