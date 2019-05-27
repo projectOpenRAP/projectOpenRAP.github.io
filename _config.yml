@@ -60,14 +60,16 @@ defaults:
     path: "docs/developer/subcategory-1"
   values:
     SubCategories:
-       - 'Sub Category 1'
+       # - 'Sub Category 1'
+       Developer's Guide To Write Plugins
     SubCategoryOrder: 1
 -
   scope:
     path: "docs/developer/subcategory-2"
   values:
     SubCategories:
-        - 'Sub Category 2'
+        # - 'Sub Category 2'
+        Telemetry Service and SDK
     SubCategoryOrder: 2
 -
   scope:
