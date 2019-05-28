@@ -3,8 +3,8 @@ date: 2018-11-19
 title: Prerequisites of the subcat-5
 description: description of A1
 PageOrdering: 1
-showSidebar: true
-published: true
+showSidebar: false
+published: false
 allowSearch: true
 ---
 

@@ -2,21 +2,22 @@
 date: 2019-04-16
 title: How to Upgrade the device?
 description: Steps to be follwed to upgrade the device
-PageOrdering: 2
+PageOrdering: 1
 showSidebar: true
 published: true
 allowSearch: false
 allowIndexing: true
 ---
-#### Warning! :
+## How to Upgrade the Device?
+### Warning! :
 Do not upgrade the device while the files are being uploaded into the device.
 
-#### NOTE:
+### NOTE:
 *while upgrading*  
 * Do not Turn off the device.   
 * Do not navigate to other pages/close the window.  
   
-#### Prerequisite:
+### Prerequisite:
 	1. Download the latest upgrade file from the google drive.
 	2. Before upgrading the device make sure that the latest Upgrade file's version is higher than the current version of the device.
 	3. Log in to the device using your laptop/Desktop. 

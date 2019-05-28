@@ -8,12 +8,13 @@ published: true
 allowSearch: false
 allowIndexing: true
 ---
-#### NOTE:
+## File Management
+### NOTE:
 *while uploading the ecar files:*  
 * Do not Turn off the device.   
 * Do not navigate to other pages/close the window.  
   
-#### Prerequisite:
+### Prerequisite:
 	1. Download the required ecar files and keep it ready.
 	2. Log in to the device using your laptop/Desktop. 
   

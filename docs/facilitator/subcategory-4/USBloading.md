@@ -1,6 +1,6 @@
 ---
 date: 2019-04-16
-title: USB loading
+title: USB Uploading
 description: Steps to upload ecar files using pen drive.
 PageOrdering: 2
 showSidebar: true
@@ -8,12 +8,13 @@ published: true
 allowSearch: false
 allowIndexing: true
 ---
-#### NOTE:
+## Upload Files using USB
+### NOTE:
 *while uploading the files:*  
 * Do not Turn off the device.   
 * Do not navigate to other pages/close the window.  
   
-#### Prerequisite:
+### Prerequisite:
 	Download the required ecar files into a pen drive. 
   
 <html>

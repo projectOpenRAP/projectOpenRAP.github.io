@@ -8,10 +8,11 @@ published: true
 allowSearch: false
 allowIndexing: true
 ---
-#### NOTE:
+## Cloud Download
+### NOTE:
 *Do not Turn off the device while downloading the contents from cloud.*    
   
-#### Prerequisite:
+### Prerequisite:
 	1. The device should be connected to the internet either via ethernet cable or via USB tethering.
 	2. Log in to the device using your laptop/Desktop.
     3. Check whether the "Internet Connectivity" tag present on the Dashboard indicates "Connected".  
