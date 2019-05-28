@@ -1,194 +1,316 @@
 ---
-title: OpenRAP
-desc: Homepage OpenRAP
+title: openRAP
+desc: openRAP
+layout: default
+allowSearch: true
 ---
-<!DOCTYPE html>
-<html>
-	
-<head>
-	{% include head.html %}
-	<meta name="robots" content="index,follow">
-</head>
 
-<body>
-	{% include header.html %}
-	<div class="homepage">
-		
-		<!-- Banner 1-->
-			<div class="position-relative desktop-banner banner-1">
-				<div class="container position-relative banner-inner"> 
-					<img src="/img/device.png" class="position-absolute banner-product-image"  alt="OpenRAP Device">
-					<div class="position-absolute text-left banner-content translateYm50 pr-30">
-						<h1><b>One</b> Gadget...</h1>
-						<p><b>Introducing openRAP </b> - an offline content distribution network that refashions content delivery...</p>
-						<a class="btn btn-custom text-uppercase font-bold bg-cyan btn-1" href="/about/">Know More</a>				
-					</div>
-				</div> 
-			</div>
-			<div class="container-fluid mobile-banner py-30 ">
-						<div class="row justify-content-center align-items-center">
-						<div class="container text-center text-white p-30">
-							<img src="/img/get-the-device.png" class="img-fluid"  alt="OpenRAP Device">
-							<h1 class="pt-20">One <b>Gadget ...</b></h1>
-							<p><b>Introducing openRAP </b> - an offline content distribution network that refashions content delivery...</p>
-							<a class="btn btn-custom text-uppercase font-bold text-white" href="/about/">Know More</a>	
-						</div>
-					</div>
-			</div>
-		<!-- /Banner 1-->
+<div class="homepage">
+  <!-- Banner 1-->
+  <div class="position-relative desktop-banner banner-1">
+    <div class="container position-relative banner-inner">
+      <img
+        src="/assets/images/device/device.png"
+        class="position-absolute banner-product-image"
+        alt="openRAP Device"
+      />
+      <div
+        class="position-absolute text-left banner-content translateYm50 pr-30"
+      >
+        <h1><b>One</b> Gadget...</h1>
+        <p>
+          <b>Introducing openRAP </b> - an offline content distribution network
+          that refashions content delivery...
+        </p>
+        <a
+          class="btn btn-custom text-uppercase font-bold bg-cyan btn-1"
+          href="/about/"
+          >Know More</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mobile-banner py-30 ">
+    <div class="row justify-content-center align-items-center">
+      <div class="container text-center text-white p-30">
+        <img
+          src="/assets/images/device/get-the-device.png"
+          class="img-fluid"
+          alt="openRAP Device"
+        />
+        <h1 class="pt-20">One <b>Gadget ...</b></h1>
+        <p>
+          <b>Introducing openRAP </b> - an offline content distribution network
+          that refashions content delivery...
+        </p>
+        <a
+          class="btn btn-custom text-uppercase font-bold text-white"
+          href="/about/"
+          >Know More</a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- /Banner 1-->
 
-		<!-- Banner 2-->
-		<div class="text-center mb-80 banner-2">	
-				<div class="banner2-content container custom-contents">
-					<h2 class="mt-80 mb-80">Two <b>Reasons...</b></h2>				
-						<div class="row">
-							<div class="col-md-6 text-left">
-								<!-- <h4>Flexibility of offline use</h4> -->
-								<p>Flexible offline delivery, easy maintenance & monitoring - just two of the reasons to use openRAP...</p>
-								<p><a class="btn btn-custom text-uppercase font-bold text-white btn-1" href="/features/">Know More</a></p>
-							</div>				
-							<div class="col-md-6">
-								<img src="/img/get-the-device.png" class="img-fluid max-width-50" alt="learning">
-							</div>
-							<!--<div class="col-md-4 mt-80 text-left">
-								<h4>Easy maintance and monitoring</h4>
-								<p>Manage content and monitor who’s accessing it using the Admin Dashboard.</p>
-							</div>-->
-						</div>
-				</div>
-		</div>
-		<!-- /Banner 2-->
-		<div class="pt-30 pb-40 text-center bg-skyBlue mb-80">
-			{% include carousel.html %}
-		</div> 
-		<!-- Banner3-->
-		
-		<div class="container">
-		<div class="text-center mb-80 mt-30 banner3-content custom-contents">
-				<div class="row">							
-					<div class="col-md-4 pb-20 hoverclass">
-						<img src="/img/Vector_Smart_Object (1).png" class="img-fluid" alt="learning">
-						<h4>Quick Start</h4>
-						<div class="cp-20"><p>Start using OpenRAP with minimal fuss</p></div>
-						<div class="align-items-end"><a class="btn-sm btn border-skyBlue txt-upper btn-custom" href="/quick-start/">Get Started</a></div>
-					</div>
-					<div class="col-md-4 border border-top-0 border-bottom-0 pb-20 hoverclass ctp-20">
-						<img src="/img/Vector_Smart_Object (2).png" class="img-fluid" alt="learning">
-						<h4>Documentation</h4>
-						<div class="cp-20"><p>Read all about using, maintaining and running applications on OpenRAP</p></div>
-						<div class="align-items-end"><a class="btn-sm btn border-skyBlue txt-upper btn-custom" href="/docs/">View Documentation</a></div>
-					</div>						
-					<div class="col-md-4 hoverclass ctp-20">
-						<img src="/img/Vector_Smart_Object (3).png" class="img-fluid" alt="learning">
-						<h4>Source Code</h4>
-						<div class="cp-20"><p>Check the code and technical specifications of OpenRAP</p></div>
-						<div class="align-items-end"><a class="btn-sm btn border-skyBlue txt-upper btn-custom" target="_blank" href="https://github.com/projectOpenRAP">More Features</a></div>
-					</div>				
-				</div>
-			</div>
-		</div>
-		<!-- /Banner3-->	
-	
-		<!-- Banner4 -->
-		<div class="mt-30 mb-80 pt-40 pb-8 bg-skyBlue Banner3">
-			<div class="content-cover text-center banner4-content mt-30 mb-80 custom-contents">
-					<div class="mb-30"><h2>Many <b>Possibilities</b></h2></div>
-					<p>
-						Customize openRAP with ease, plug in new applications, explore new opportunities of use...
-					</p>						
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-xs-4 text-center custom-contents">
-						<div class="thumbnail p-20 "><img src="/img/Layer_9.png" alt="learning"></div>						
-						<p>Rural Health Education</p>							
-					</div>
-					<div class="col-md-3 col-xs-4 text-center custom-contents">
-						<div class="thumbnail p-20"><img src="/img/Layer_10 (1).png" alt="learning"></div>							
-						<p>Orphanages</p>							
-					</div>
-					<div class="col-md-3 col-xs-4 text-center custom-contents">						
-						<div class="thumbnail p-20"><img src="/img/Layer_11.png" alt="learning"></div>							
-						<p>Digital Healthcare Library</p>							
-					</div>
-					<div class="col-md-3 col-xs-4 text-center custom-contents">						
-						<div class="thumbnail p-20"><img src="/img/Layer_12.png" alt="learning"></div>							
-						<p>Refugee Camps</p>							
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /Banner4 -->
-		
-		
-		<!-- Banner5-->
-		<div class="container mt-30 mb-80 pt-20 banner5-content">
-			<div class="content-cover text-center mb-80">
-				<div class="content-title text-semibold"><h2>Our <b>Partners</b></h2></div>
-			</div>
-			<div class="row p-30">
-				<div class="col-xs-4 col-md-3 py-30">							
-					<h4 class="text-md-left">Content Creator Platform</h4>							
-				</div>
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-xs-4 col-md-4 text-center p-30">
-							<img src="/img/logo.png" class="img-fluid" alt="learning">												
-						</div>
-						<div class="col-xs-4 col-md-4 text-center p-30">						
-							<img src="/img/logo_EkStep.png" class="img-fluid" alt="learning">								
-						</div>
-						<div class="col-xs-4 col-md-4 text-center p-30">						
-							<img src="/img/Layer_13.png" class="img-fluid" alt="learning">								
-						</div>						
-					</div>
-				</div>
-			</div>
-					
-			<div class="row p-30 banner5-border">
-				<div class="col-xs-4 col-md-3 py-30">							
-					<h4 class="text-md-left">Hardware Partners<br></h4>					
-				</div>
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-xs-4 col-md-4 text-center p-30">
-							<img src="/img/pinut-logo.png" class="img-fluid" alt="learning">											
-						</div>
-						<div class="col-xs-4 col-md-4 text-center p-30">						
-							<img src="/img/avench-logo.png" class="img-fluid" alt="learning">								
-						</div>
-					</div>
-				</div>
-			</div>	
-												
-			<div class="row p-30">
-				<div class="col-xs-4 col-md-3 py-30">							
-					 <h4 class="text-md-left">Content Providers<br></h4>												
-				</div>
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-xs-4 col-md-4 text-center p-30">
-							<img src="/img/Meghshala+Logo+Inverse+with+name+(2).png" class="img-fluid" alt="learning">							
-						</div>
-						<div class="col-xs-4 col-md-4 text-center p-30">						
-							<img src="/img/gurug_logo_org.png" class="img-fluid" alt="learning">								
-						</div>
-						<div class="col-xs-4 col-md-4 text-center p-30">						
-							<img src="/img/logo_(1).png" class="img-fluid" alt="learning">								
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-4 col-md-4 text-center p-30">						
-							<img src="/img/58480a01cef1014c0b5e490f.png" class="img-fluid" alt="learning">								
-						</div>							
-					</div>
-				</div>
-			</div>		
-		</div>			
-		
-		<!-- /Banner5-->
-		
-		{% include footer.html %}
-		
-	</body>
-</html>
+  <!-- Banner 2-->
+  <div class="text-center mb-80 banner-2">
+    <div class="banner2-content container custom-contents">
+      <h2 class="mt-80 mb-80">Two <b>Reasons...</b></h2>
+      <div class="row">
+        <div class="col-md-6 text-left">
+          <p>
+            Flexible offline delivery, easy maintenance & monitoring - just two
+            of the reasons to use openRAP...
+          </p>
+          <p>
+            <a
+              class="btn btn-custom text-uppercase font-bold text-white btn-1"
+              href="/features/"
+              >Know More</a
+            >
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="/assets/images/device/get-the-device.png"
+            class="img-fluid max-width-50"
+            alt="openRAP device"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Banner 2-->
+  <div class="pt-30 pb-40 text-center bg-skyBlue mb-80">
+    {% include carousel.html %}
+  </div>
+  <!-- Banner3-->
+
+  <div class="container">
+    <div class="text-center mb-80 mt-30 banner3-content custom-contents">
+      <div class="row">
+        <div class="col-md-4 pb-20 hoverclass">
+          <img
+            src="/assets/images/icons/quick-start.png"
+            class="img-fluid"
+            alt="Quick Start icon"
+          />
+          <h4>Quick Start</h4>
+          <div class="cp-20"><p>Start using OpenRAP with minimal fuss</p></div>
+          <div class="align-items-end">
+            <a
+              class="btn-sm btn border-skyBlue txt-upper btn-custom"
+              href="/quick-start/"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <div
+          class="col-md-4 border border-top-0 border-bottom-0 pb-20 hoverclass ctp-20"
+        >
+          <img
+            src="/assets/images/icons/folder.png"
+            class="img-fluid"
+            alt="Documentation icon"
+          />
+          <h4>Documentation</h4>
+          <div class="cp-20">
+            <p>
+              Read all about using, maintaining and running applications on
+              OpenRAP
+            </p>
+          </div>
+          <div class="align-items-end">
+            <a
+              class="btn-sm btn border-skyBlue txt-upper btn-custom"
+              href="/docs/"
+              >View Documentation</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4 hoverclass ctp-20">
+          <img
+            src="/assets/images/icons/code.png"
+            class="img-fluid"
+            alt="Source code icon"
+          />
+          <h4>Source Code</h4>
+          <div class="cp-20">
+            <p>Check the code and technical specifications of OpenRAP</p>
+          </div>
+          <div class="align-items-end">
+            <a
+              class="btn-sm btn border-skyBlue txt-upper btn-custom"
+              href="https://github.com/projectOpenRAP"
+              target="_blank"
+              rel="noopener"
+              >More Features</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Banner3-->
+
+  <!-- Banner4 -->
+  <div class="mt-30 mb-80 pt-40 pb-8 bg-skyBlue Banner3">
+    <div
+      class="content-cover text-center banner4-content mt-30 mb-80 custom-contents"
+    >
+      <div class="mb-30">
+        <h2>Many <b>Possibilities</b></h2>
+      </div>
+      <p>
+        Customize openRAP with ease, plug in new applications, explore new
+        opportunities of use...
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-xs-4 text-center custom-contents">
+          <div class="thumbnail p-20 ">
+            <img
+              src="/assets/images/icons/education.png"
+              alt="Rural Health Education Icon"
+            />
+          </div>
+          <p>Rural Health Education</p>
+        </div>
+        <div class="col-md-3 col-xs-4 text-center custom-contents">
+          <div class="thumbnail p-20">
+            <img
+              src="/assets/images/icons/orphanages.png"
+              alt="Orphanages icon"
+            />
+          </div>
+          <p>Orphanages</p>
+        </div>
+        <div class="col-md-3 col-xs-4 text-center custom-contents">
+          <div class="thumbnail p-20">
+            <img
+              src="/assets/images/icons/healthcare.png"
+              alt="Digital Healthcare Library icon"
+            />
+          </div>
+          <p>Digital Healthcare Library</p>
+        </div>
+        <div class="col-md-3 col-xs-4 text-center custom-contents">
+          <div class="thumbnail p-20">
+            <img
+              src="/assets/images/icons/refugee.png"
+              alt="Refugee Camps icon"
+            />
+          </div>
+          <p>Refugee Camps</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Banner4 -->
+
+  <!-- Banner5-->
+  <div class="container mt-30 mb-80 pt-20 banner5-content">
+    <div class="content-cover text-center mb-80">
+      <div class="content-title text-semibold">
+        <h2>Our <b>Partners</b></h2>
+      </div>
+    </div>
+    <div class="row p-30">
+      <div class="col-xs-4 col-md-3 py-30">
+        <h4 class="text-md-left">Content Creator Platform</h4>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-xs-4 col-md-4 text-center p-30">
+            <img
+              src="/assets/images/partners/diksha.png"
+              class="img-fluid"
+              alt="DIKSHA"
+            />
+          </div>
+          <div class="col-xs-4 col-md-4 text-center p-30">
+            <img
+              src="/assets/images/partners/ekstep.png"
+              class="img-fluid"
+              alt="Ekstep"
+            />
+          </div>
+          <div class="col-xs-4 col-md-4 text-center p-30">
+            <img
+              src="/assets/images/partners/sunbird.png"
+              class="img-fluid"
+              alt="Sunbird"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row p-30 banner5-border">
+      <div class="col-xs-4 col-md-3 py-30">
+        <h4 class="text-md-left">Hardware Partners<br /></h4>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-xs-4 col-md-4 text-center p-30">
+            <img
+              src="/assets/images/partners/pinut.png"
+              class="img-fluid"
+              alt="Pinut"
+            />
+          </div>
+          <div class="col-xs-4 col-md-4 text-center p-30">
+            <img
+              src="/assets/images/partners/avench.png"
+              class="img-fluid"
+              alt="Avench"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row p-30">
+      <div class="col-xs-4 col-md-3 py-30">
+        <h4 class="text-md-left">Content Providers<br /></h4>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-xs-4 col-md-4 text-center p-30">
+            <img
+              src="/assets/images/partners/meghshala.png"
+              class="img-fluid"
+              alt="meghshala"
+            />
+          </div>
+          <div class="col-xs-4 col-md-4 text-center p-30">
+            <img
+              src="/assets/images/partners/gurug.png"
+              class="img-fluid"
+              alt="Guru G"
+            />
+          </div>
+          <div class="col-xs-4 col-md-4 text-center p-30">
+            <img
+              src="/assets/images/partners/pratham.png"
+              class="img-fluid"
+              alt="Pratham"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-md-4 text-center p-30">
+            <img
+              src="/assets/images/partners/khan.png"
+              class="img-fluid"
+              alt="Khan Academy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Banner5-->
+</div>
